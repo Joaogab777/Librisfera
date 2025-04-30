@@ -9,7 +9,7 @@ interface BookCardProps {
 
 const BookCard: React.FC<BookCardProps> = ({ title, author, coverImage }) => {
   return (
-    <Card className="w-60 p-4 border border-gray-300 rounded-lg shadow-md">
+    <Card className="w-60 p-4 border bg-purple-800/30 border-neutral-600 rounded-lg shadow-md">
       <img src={coverImage} alt={title} className="w-full h-60 object-cover rounded-md" />
       <h3 className="text-lg font-semibold mt-4">{title}</h3>
       <p className="text-sm text-gray-500">{author}</p>
